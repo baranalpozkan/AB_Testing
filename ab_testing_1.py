@@ -129,7 +129,7 @@ print('Test Stat = %.5f, p-value = %.5f' % (test_stat, pvalue))
 # p < 0.05 H0 RED , p > 0.05 H0 REDDEDİLEMEZ
 
 # Kontrol ve test grubu için varyans homojenliğinin sağlanıp sağlanmadığını Purchase değişkeni üzerinden test ediniz.
-# Test sonucuna göre normallik varsayımı sağlanıyor mu? Elde edilen p-value değerlerini yorumlayınız.
+# Test sonucuna göre varyans homojenliği varsayımı sağlanıyor mu? Elde edilen p-value değerlerini yorumlayınız.
 
 test_stat, pvalue = levene(df.loc[df["group"] == "control", "Purchase"],
                            df.loc[df["group"] == "test", "Purchase"])
